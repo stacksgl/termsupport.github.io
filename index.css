@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: #2a2b34;
+  min-width: 300px;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  background: #26272e;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid #5b89bd;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+}
+.header-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.main-title {
+  text-align: center;
+  border-bottom: 3px solid #5b89bd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */.main-products .product-item_headerposition: relative;
+  padding: 100px 0;
+}
+.main-title .title {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 0.5rem;
+}
+.main-title .subtitle {
+  color: #989898;
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 32px;
+}
+.main-products {
+  margin-top: 40px;
+}
+.main-products .product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-products .product-item {
+  box-shadow: 0 0 20px 1px #5b89bd73;
+  max-height: 500px;
+  height: 100%;
+  max-width: 250px;
+  width: 100%;
+  border: 1px solid #5b89bd73;
+  border-radius: 0.25rem;
+  margin: 20px;
+}
+.main-products .product-item_header
+{
+  max-height: 100px;
+  height: 100%;
+  background-color: rgb(35, 35, 43);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: center;
+}
+
+.main-products .product-item_header .price
+{
+  font-size: 14px;
+  color: #989898;
+}
+
+
+.main-products .product-item_header > p {
+  font-weight: 400;
+  color: #5b89bd;
+  font-size: 22px;
+  padding: 5px 10px;
+}
+.main-products .product-item_content {
+  padding: 20px;
+  text-align: center;
+}
+.main-products .product-item_content .price > .amount {
+  font-weight: 700;
+  color: #989898;
+  font-size: 40px;
+}
+.main-products .product-item_content .price > .duration {
+  font-weight: 600;
+  color: #989898;
+  font-size: 30px;
+}
+.main-products .product-item_content .description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #989898;
+  line-height: 24px;
+  margin: 10px 0;
+}
+.main-products .product-item_content .details {
+  margin-top: 15px;
+  transition: all 0.3s;
+  font-weight: 600;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #23232b;
+  border: none;
+  color: #989898;
+  width: 100%;
+  height: 50px;
+}
+.main-products .product-item_content .details:hover {
+  background-color: #1d1d24;
+  color: #5b89bd;
+}
+
+.purchase {
+  text-align: center;
+  position: relative;
+}
+.purchase-title {
+  color: #949898;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 0.5rem;
+}
+.purchase-code {
+  margin: 10px 0 20px;
+}
+.purchase-code > input {
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: center;
+  border-radius: 10px;
+  height: 40px;
+  max-width: 380px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+  letter-spacing: 1px;
+  color: #5b89bd;
+  font-weight: 500;
+}
+.purchase-code > p {
+  margin-bottom: 5px;
+  color: #989898;
+  font-size: 16px;
+}
+.purchase-info {
+  margin-top: 20px;
+}
+.purchase-info > .description {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #161C2D;
+  line-height: 24px;
+}
+.purchase-info > .download
+{
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.purchase-info .a
+{
+  color: #FFFFFF;
+  text-decoration: none;
+  ont-size: 18px;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+}
+.modal-content {
+  background: #2a2b34;
+  box-shadow: 0 0 40px 5px #2a2b34;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 95%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.modal-header p {
+  font-size: 25px;
+  color: #5b89bd;
+  font-weight: 600;
+}
+.modal-header .modal-close {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.25s;
+}
+.modal-header .modal-close i {
+  font-size: 24px;
+  color: #000;
+}
+.modal-header .modal-close:hover {
+  opacity: 0.7;
+}
+.modal-main {
+  color: #989898;
+  text-align: center;
+  margin-top: 15px;
+}
+.modal-main .information {
+  list-style: none;
+}
+.modal-main .information li {
+  font-weight: 500;
+  margin: 5px 0;
+}
+.modal-main .information li i {
+  margin-right: 5px;
+}
+.modal-main .gallery {
+  position: relative;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.modal-main .gallery img {
+  width: 100%;
+}
+.modal-main .gallery .slick-track {
+  display: flex;
+  overflow: hidden;
+}
+.modal-main .gallery .slick-list {
+  overflow: hidden;
+  width: 100%;
+}
+.modal-main .gallery .slick-arrow {
+  width: 15px;
+  height: 15px;
+  background: no-repeat 50%/100% 100%;
+  outline: none;
+  position: absolute;
+  border: solid #ccc;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  font-size: 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  z-index: 9;
+}
+.modal-main .gallery .slick-arrow.slick-prev {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 15px;
+}
+.modal-main .gallery .slick-arrow.slick-next {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  right: 15px;
+}
+.modal-main .gallery .slick-arrow:hover {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+}
+.modal-main .gallery .slick-slide {
+  outline: none;
+}
+.modal-main .gallery .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+.modal-main .gallery .slick-dots li {
+  margin: 5px;
+}
+.modal-main .gallery .slick-dots .slick-active button {
+  background: #fff !important;
+}
+.modal-main .gallery .slick-dots button {
+  width: 30px;
+  height: 3px;
+  font-size: 0;
+  cursor: pointer;
+  background: #ccc;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.modal-main .additionally-item {
+  margin-bottom: 15px;
+}
+.modal-main .additionally-title {
+  font-size: 24px;
+  color: #161C2D;
+  font-weight: 700;
+}
+.modal-main .additionally-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #161C2D;
+  line-height: 24px;
+}
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: 30px;
+}
+.modal-footer button {
+  transition: all 0.3s;
+  font-weight: 600;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #23232b;
+  border: none;
+  color: #989898;
+  width: 100%;
+  height: 40px;
+  margin: 0 10px;
+}
+.modal-footer button:hover {
+  background-color: #1d1d24;
+  color: #5b89bd;}
+
+/*# sourceMappingURL=index.css.map */
